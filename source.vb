@@ -3,7 +3,7 @@
     Let slideCount = ActivePresentation.Slides.Count
     Set slideTemplate = ActivePresentation.Slides(slideCount)
     Dim str As String
-    Let str = InputBox("请输入Excel路径", "替换内容")
+    Let str = InputBox("请输入文本文件路径", "替换内容")
     Open str For Input As #1
     Do While Not EOF(1)
         Dim newSlide As Variant
@@ -32,6 +32,3 @@
     Loop
     Close (1)
 End Sub
-
-
-
