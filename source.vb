@@ -1,9 +1,9 @@
-Sub Generate()
+ï»¿Sub Generate()
     Dim slideCount As Integer, slideTemplate As Variant
     Let slideCount = ActivePresentation.Slides.Count
     Set slideTemplate = ActivePresentation.Slides(slideCount)
     Dim str As String
-    Let str = InputBox("ÇëÊäÈëExcelÂ·¾¶", "Ìæ»»ÄÚÈİ")
+    Let str = InputBox("è¯·è¾“å…¥Excelè·¯å¾„", "æ›¿æ¢å†…å®¹")
     Open str For Input As #1
     Do While Not EOF(1)
         Dim newSlide As Variant
